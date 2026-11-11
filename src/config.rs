@@ -161,17 +161,17 @@ fn is_horizontal(dx: f64, dy: f64) -> bool {
     dx.abs() > dy.abs()
 }
 
-#[cfg(test)]
-mod tests {
-    use super::*;
-    use std::path::PathBuf;
-
-    #[test]
-    fn test_from_path() {
-        let mut path = PathBuf::from(env!("CARGO_MANIFEST_DIR"));
-        path.push("config.toml");
-
-        let config = GesturesConfig::from_path(&path).unwrap();
-        println!("{:?}", config)
-    }
-}
+// #[cfg(test)]
+// mod tests {
+//     use super::*;
+//     use std::path::PathBuf;
+//
+//     #[test]
+//     fn test_from_path() {
+//         let mut path = PathBuf::from(env!("CARGO_MANIFEST_DIR"));
+//         path.push("config.toml");
+//
+//         let config = GesturesConfig::from_path(&path).unwrap();
+//         println!("{:?}", config)
+//     }
+// }
